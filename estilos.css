@@ -1,0 +1,38 @@
+:root {
+    --terracota: #C05A46;
+    --blanco-hueso: #F9F8F6;
+    --texto-oscuro: #2C2C2C;
+}
+
+body {
+    background-color: var(--blanco-hueso);
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header h1 {
+    color: var(--texto-oscuro);
+    font-size: 24px;
+}
+
+.contenedor-pestanas {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-categoria {
+    background-color: #FFFFFF;
+    color: var(--texto-oscuro);
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-categoria.activa {
+    border-color: var(--terracota);
+    background-color: var(--terracota);
+    color: #FFFFFF;
+}
